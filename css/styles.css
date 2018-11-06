@@ -95,9 +95,9 @@ button {
 .show {
   color: #fff;
   background-color: #ce1a1a;
-  /* transition: width 2s, height 2s, transform 1s;
-  -webkit-transform: rotate(180deg); /* Safari */
-  /* transform: rotate(360deg);  */
+  transition: width 2s, height 2s, transform 1s;
+  -webkit-transform: rotate(360deg); /* Safari */
+  transform: rotate(360deg);
 }
 /* Keyboard */
 
@@ -123,6 +123,7 @@ button {
 
 .btn__reset:hover{
   cursor: pointer;
+  font-weight: bold;
 }
 
 /* Overlay */
