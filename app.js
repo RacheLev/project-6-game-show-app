@@ -60,6 +60,7 @@ function checkLetter (guess) {
   for (i = 0; i < letters.length; i++) {
     if (guess.textContent == letters[i].textContent) {
       letters[i].classList.add("show");
+      guess.style.background = '#5ed163';
        match = true;
   }
 }

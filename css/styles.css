@@ -78,10 +78,10 @@ button {
 /* Phrase */
 
 .letter {
-  font-size: var(--font-size-medium);
+  font-size: 2em;
   height: 65px;
   width: 65px;
-  padding: 20px 1px 0 1px;
+  padding: 11px 1px 0 1px;
   margin-right: 2px;
   color: transparent;
   background: var(--color-neutral-light);
@@ -93,10 +93,12 @@ button {
 }
 
 .show {
-  color: #000;
-  background-color: #76CE82;
+  color: #fff;
+  background-color: #ce1a1a;
+  /* transition: width 2s, height 2s, transform 1s;
+  -webkit-transform: rotate(180deg); /* Safari */
+  /* transform: rotate(360deg);  */
 }
-
 /* Keyboard */
 
 .keyrow {
@@ -117,6 +119,10 @@ button {
   background: #FFFFFF;
   border-radius: 5px;
   font-size: var(--font-size-medium);
+}
+
+.btn__reset:hover{
+  cursor: pointer;
 }
 
 /* Overlay */
