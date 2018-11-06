@@ -94,10 +94,12 @@ function checkWin() {
         title.textContent = 'You won!!';
         startGame.textContent = 'Play again';
       }
+      
       else if (missed >= 5) {
         overlay.style.display = 'flex';
         overlay.className = 'lose';
         title.textContent = 'You lost!!';
         startGame.textContent = 'Play again';
+
       }
     }
