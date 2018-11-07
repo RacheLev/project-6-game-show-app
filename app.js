@@ -101,7 +101,7 @@ function checkWin() {
         startGame.textContent = 'Play again';
       }
     }
-    
+
     startGame.addEventListener ( "click", (e) => {
       if(e.target.textContent === 'Play again'){
         missed = 0;
