@@ -121,9 +121,16 @@ button {
   font-size: var(--font-size-medium);
 }
 
+a {
+  width: 130px;
+}
+/* a:hover{
+  border: green solid 1px;
+} */
 .btn__reset:hover{
   cursor: pointer;
   font-weight: bold;
+
 }
 
 /* Overlay */

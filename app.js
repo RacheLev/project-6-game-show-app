@@ -8,6 +8,7 @@ const show = document.getElementsByClassName('show'); // visible letters
 const letters = document.getElementsByClassName('letter'); // phrase letters
 const liveHearts = document.querySelectorAll('.tries img'); // liveHeart.png image
 const title = document.querySelector('.title'); // "Wheel of Success" title
+const keyrow = document.querySelectorAll('.keyrow button');
 let missed = 0; //guesses the player has missed
 
 // Phrases
@@ -93,13 +94,14 @@ function checkWin() {
         overlay.className = 'win';
         title.textContent = 'You won!!';
         startGame.textContent = 'Play again';
+        window.location.reload(true);
       }
-      
+
       else if (missed >= 5) {
         overlay.style.display = 'flex';
         overlay.className = 'lose';
         title.textContent = 'You lost!!';
         startGame.textContent = 'Play again';
-
+        window.location.reload(true);
       }
     }
