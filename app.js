@@ -8,7 +8,6 @@ const show = document.getElementsByClassName('show'); // visible letters
 const letters = document.getElementsByClassName('letter'); // phrase letters
 const liveHearts = document.querySelectorAll('.tries img'); // liveHeart.png image
 const title = document.querySelector('.title'); // "Wheel of Success" title
-const keyrow = document.querySelectorAll('.keyrow button');
 let missed = 0; //guesses the player has missed
 
 // Phrases
