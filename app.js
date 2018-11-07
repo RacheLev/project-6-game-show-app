@@ -2,7 +2,6 @@ const qwerty = document.getElementById("qwerty"); // onscreen keyboard
 const phrase = document.getElementById("phrase"); // ul
 const startGame = document.querySelector(".btn__reset"); //“Start Game” button
 const overlay = document.getElementById("overlay"); // div containing h2 and “Start Game” button
-const button = document.querySelector('button');
 const visbilePhrase = document.querySelector('#phrase ul'); //phrase hidden letters
 const show = document.getElementsByClassName('show'); // visible letters
 const letters = document.getElementsByClassName('letter'); // phrase letters
@@ -93,7 +92,6 @@ function checkWin() {
         overlay.className = 'win';
         title.textContent = 'You won!!';
         startGame.textContent = 'Play again';
-        window.location.reload(true);
       }
 
       else if (missed >= 5) {
@@ -101,6 +99,12 @@ function checkWin() {
         overlay.className = 'lose';
         title.textContent = 'You lost!!';
         startGame.textContent = 'Play again';
-        window.location.reload(true);
       }
     }
+    
+    startGame.addEventListener ( "click", (e) => {
+      if(e.target.textContent === 'Play again'){
+        missed = 0;
+        window.location.reload(true);
+      }
+    });
