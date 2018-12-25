@@ -16,7 +16,10 @@ phrases = [
           "a bunch of fives",
           "easy as pie",
           "after the fact",
-          "get over it"
+          "get over it",
+          "meira is the best",
+          "elisha i love you",
+          "yechiel hatzadick" 
 ];
 
 //hide the start screen overlay.
@@ -102,7 +105,7 @@ function checkWin() {
       }
     }
 
-    startGame.addEventListener ( "click", (e) => {
+  window.addEventListener ( "click", (e) => {
       if(e.target.textContent === 'Play again'){
         missed = 0;
         window.location.reload(true);
